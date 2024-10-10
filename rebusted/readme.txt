@@ -3,8 +3,8 @@ Contributors: pross
 Plugin URI: https://github.com/Pross/reBusted
 Tags: browser cache, develop, debug, client, clear, empty, refresh
 Requires at least: 3.4
-Tested up to: 6.6
-Stable tag: 1.1
+Tested up to: 6.7
+Stable tag: 1.2
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,7 +22,7 @@ Forked and updated for todays WordPress and PHP from the original plugin by Paul
 * Only refreshes browser cache for a file if it has been modified.
 * Resolves Content Delivery Network (CDN) issues. No need to purge CDN cache.
 * Multisite compatible.
-* "Just works" — no configuration necessary.
+* "Just works" - no configuration necessary.
 
 **Requirements**
 
@@ -40,6 +40,9 @@ Requires scripts use any of the below functions to load. Almost all files meet t
 1. Activate the plugin.
 
 == Changelog ==
+
+= 1.2 =
+* Fixed PHP warnings when poorly coded plugins use wp_enqueue_script() wrong.
 
 = 1.1 =
 * Fixed fatal error on ancient PHP versions.
